@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Token Form</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    form {
+      background-color: black;
+      border: 2px solid white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      background-color: black;
+      color: white;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+
+    input[type="file"] {
+      border-color: white;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ddd;
+    }
+
+    input, textarea:invalid {
+      border-color: red;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <form>
+      <label for="xrpWalletAddress">XRP Wallet Address:</label>
+      <input type="text" id="xrpWalletAddress" name="xrpWalletAddress" placeholder="XRP Wallet Address"
+          required>
+  
+      <label for="image">Image:</label>
+      <input type="file" id="image" name="image" accept="image/*" required>
+  
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+  
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" placeholder="Price" required>
+  
+      <button type="button" id="addArt">Submit</button>
+    </form>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.2/dist/web3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="upload.js"></script>
+</body>
+</html>

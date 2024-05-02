@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Art Markeplace</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./src/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.2/dist/web3.min.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body id="top">
+  <header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./src/assets/images/logo.png" alt="NFT logo">
+      </a>
+      <div class="header-right">
+        <div class="header-nav-wrapper">
+          <button class="navbar-toggle-btn" data-navbar-toggle-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+              <li class="navbar-link">
+                <a href="#" class="navbar-link">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="navbar-link">About</a>
+              </li>
+              <li>
+                <a href="#new-product" class="navbar-link">Collections</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <article>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="h1 hero-title">Discover digital art sell your specific <span>NFT</span></h1>
+            <p class="hero-text">
+              Partner with one of the world’s largest retailers to showcase your brand and products.
+            </p>
+            <div class="btn-group">
+              <button class="btn btn-primary" id="explore-product" href="explore-product">Explore more</button>
+            </div>
+          </div>
+          <figure class="hero-banner">
+            <img src="./src/assets/images/hero-banner.jpg" alt="nft art">
+          </figure>
+        </div>
+      </section>
+      <!-- -------------------About----------------- -->
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="h2 about-title">Create and sell your NFTs</h2>
+          <ol class="about-list">
+            <li class="about-item">
+              <div class="about-card">
+                <div class="card-number">01</div>
+                <div class="card-icon">
+                  <img src="./src/assets/images/single-create-sell-item-1.png" alt="wallet icon">
+                </div>
+                <h3 class="h3 about-card-title">Set up Your Wallet</h3>
+                <p class="about-card-text">
+                  Secure your digital assets by setting up your wallet—a digital vault for NFTs.
+                </p>
+              </div>
+            </li>
+            <li class="about-item">
+              <div class="about-card">
+                <div class="card-number">02</div>
+                <div class="card-icon">
+                  <img src="./src/assets/images/single-create-sell-item-2.png" alt="collection icon">
+                </div>
+                <h3 class="h3 about-card-title">Create Your Collection</h3>
+                <p class="about-card-text">
+                  Unleash your creativity and curate a unique collection of one-of-a-kind digital masterpieces.
+                </p>
+              </div>
+            </li>
+            <li class="about-item">
+              <div class="about-card">
+                <div class="card-number">03</div>
+                <div class="card-icon">
+                  <img src="./src/assets/images/single-create-sell-item-3.png" alt="folder icon">
+                </div>
+                <h3 class="h3 about-card-title">Add Your NFT</h3>
+                <p class="about-card-text">
+                  Populate your collection with distinct NFTs, creating a digital gallery with blockchain-backed
+                  authenticity.
+                </p>
+              </div>
+            </li>
+            <li class="about-item">
+              <div class="about-card">
+                <div class="card-number">04</div>
+                <div class="card-icon">
+                  <img src="./src/assets/images/single-create-sell-item-4.png" alt="diamond icon">
+                </div>
+                <h3 class="h3 about-card-title">Sell Your NFT Using Xrp</h3>
+                <p class="about-card-text">
+                  Showcase and monetize your art on NFT marketplaces, connecting with a global community of art
+                  enthusiasts.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- ----------------Collections------------------ -->
+
+      <section class="new-product" id="new-product">
+        <div class="container">
+          <div class="section-header-wrapper">
+            <h2 class="h2 section-title">Collections</h2>
+            <div class="button-container">
+              <a href="./form.html" class="btn btn-primary">Add Arts</a>
+              <!-- <a href="./buy.html" class="btn btn-primary">S NFTs</a> -->
+            </div>
+          </div>
+          <ul class="product-list" id="productlist">
+
+          </ul>
+        </div>
+      </section>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-content">
+                <h2>Product Details</h2>
+                <p id="xrpWalletAddress1"></p>
+                <p id="price1"></p>
+                <label for="secretKey">Secret Key:</label>
+                <input type="text" id="secretKey" placeholder="Enter your secret key...">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="confirmPurchase" class="btn btn-primary">Confirm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  </main>
+  <!-----------------Footer--------------------->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+          <h3 class="h4 social-title">Join the community</h3>
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/codewithsadee" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/codewithsadee" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-link-box">
+          <ul class="footer-list">
+            <li>
+              <h3 class="h3 footer-item-title">Marketplace</h3>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Product</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">All NFTs</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Xrp</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <h3 class="h3 footer-item-title">Explore</h3>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Live Auctions</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">All NFTs</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Collections</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Items Details</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <h3 class="h3 footer-item-title">Supports</h3>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Item Details</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2024 <a href="https://github.com/codewithsadee">@DigitalArts</a> all rights reserved
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--GO TO TOP-->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- <script src="xrpl.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/xrpl"></script>
+  <script src="index.js"></script>
+
+</body>
+
+
+</html>
